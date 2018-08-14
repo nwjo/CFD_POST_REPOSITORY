@@ -1,0 +1,126 @@
+# Session file started:  2018/08/14 17:07:51
+# CFX-19.1
+
+# To avoid unnecessary file pre-processing and modifications, include
+# COMMAND FILE at the top of your session file.
+# If it is not included, the file is assumed to be older and will be
+# modified for backward compatibility.
+COMMAND FILE:
+  CFX Post Version = 19.1
+END
+
+>copy from=/PLANE:x0, to=/PLANE:x0 3
+>copy from=/PLANE:x0, to=/PLANE:x0 4
+>copy from=/PLANE:x0, to=/PLANE:x0 5
+>copy from=/PLANE:x0, to=/PLANE:x0 6
+>copy from=/PLANE:x0, to=/PLANE:x0 7
+>copy from=/PLANE:x0, to=/PLANE:x0 8
+>copy from=/PLANE:x0, to=/PLANE:x0 9
+>copy from=/PLANE:x0, to=/PLANE:x0 10
+>copy from=/PLANE:x0, to=/PLANE:x0 11
+>copy from=/PLANE:x0, to=/PLANE:x0 12
+>copy from=/PLANE:x0, to=/PLANE:x0 13
+>copy from=/PLANE:x0, to=/PLANE:x0 14
+>copy from=/PLANE:x0, to=/PLANE:x0 15
+>copy from=/PLANE:x0, to=/PLANE:x0 16
+>copy from=/PLANE:x0, to=/PLANE:x0 17
+>copy from=/PLANE:x0, to=/PLANE:x0 18
+>copy from=/PLANE:x0, to=/PLANE:x0 19
+>copy from=/PLANE:x0, to=/PLANE:x0 20
+>copy from=/PLANE:x0, to=/PLANE:x0 21
+>copy from=/PLANE:x0, to=/PLANE:x0 22
+>copy from=/PLANE:x0, to=/PLANE:x0 23
+>copy from=/PLANE:x0, to=/PLANE:x0 24
+
+
+
+
+# Session file stopped:  2018/08/14 17:10:05
+
+# Session file started:  2018/08/14 17:49:20
+# CFX-19.1
+
+# To avoid unnecessary file pre-processing and modifications, include
+# COMMAND FILE at the top of your session file.
+# If it is not included, the file is assumed to be older and will be
+# modified for backward compatibility.
+COMMAND FILE:
+  CFX Post Version = 19.1
+END
+
+
+PLANE:x0 1
+  Apply Instancing Transform = On
+  Apply Texture = Off
+  Blend Texture = On
+  Bound Radius = 0.5 [m]
+  Colour = 0.75, 0.75, 0.75
+  Colour Map = Default Colour Map
+  Colour Mode = Constant
+  Colour Scale = Linear
+  Colour Variable = Pressure
+  Colour Variable Boundary Values = Conservative
+  Culling Mode = No Culling
+  Direction 1 Bound = 1.0 [m]
+  Direction 1 Orientation = 0 [degree]
+  Direction 1 Points = 10
+  Direction 2 Bound = 1.0 [m]
+  Direction 2 Points = 10
+  Domain List = /DOMAIN GROUP:All 1 Domains
+  Draw Faces = On
+  Draw Lines = Off
+  Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+  Invert Plane Bound = Off
+  Lighting = On
+  Line Colour = 0, 0, 0
+  Line Colour Mode = Default
+  Line Width = 1
+  Max = 0.0 [Pa]
+  Min = 0.0 [Pa]
+  Normal = 1 , 0 , 0
+  Option = YZ Plane
+  Plane Bound = None
+  Plane Type = Slice
+  Point = 0 [m], 0 [m], 0 [m]
+  Point 1 = 0 [m], 0 [m], 0 [m]
+  Point 2 = 1 [m], 0 [m], 0 [m]
+  Point 3 = 0 [m], 1 [m], 0 [m]
+  Range = Global
+  Render Edge Angle = 0 [degree]
+  Specular Lighting = On
+  Surface Drawing = Smooth Shading
+  Texture Angle = 0
+  Texture Direction = 0 , 1 , 0
+  Texture File =
+  Texture Material = Metal
+  Texture Position = 0 , 0
+  Texture Scale = 1
+  Texture Type = Predefined
+  Tile Texture = Off
+  Transform Texture = Off
+  Transparency = 0.0
+  X = 0.02 [m]
+  Y = 0.0 [m]
+  Z = 0.0 [m]
+  OBJECT VIEW TRANSFORM:
+    Apply Reflection = Off
+    Apply Rotation = Off
+    Apply Scale = Off
+    Apply Translation = Off
+    Principal Axis = Z
+    Reflection Plane Option = XY Plane
+    Rotation Angle = 0.0 [degree]
+    Rotation Axis From = 0 [m], 0 [m], 0 [m]
+    Rotation Axis To = 0 [m], 0 [m], 0 [m]
+    Rotation Axis Type = Principal Axis
+    Scale Vector = 1 , 1 , 1
+    Translation Vector = 0 [m], 0 [m], 0 [m]
+    X = 0.0 [m]
+    Y = 0.0 [m]
+    Z = 0.0 [m]
+  END
+END
+
+
+# Session file stopped:  2018/08/14 17:49:48
+
