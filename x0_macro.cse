@@ -1,12 +1,13 @@
 
 
-!$numsteps = 10;
+!$numsteps = 16;
 !for($i=0; $i < $numsteps;$i++){
+!$initialPo=0.75;
 !$trans = $i;
-!$distance = $trans * 0.02;
-PLANE: x0 $trans
-  Option = YZ Plane
-  X= $trans [m]
+!$distance = $initialPo- $trans * 0.1;
+PLANE: y0 $trans
+  Option = ZX Plane
+  Y= $distance [m]
 
 END
 
