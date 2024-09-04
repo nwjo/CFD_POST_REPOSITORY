@@ -8,7 +8,11 @@
 PLANE: y0 $trans
   Option = ZX Plane
   Y= $distance [m]
-
+  Colour Scale = Linear
+  Colour Mode = Variable
+  Colour Variable = Velocity
+  Range = Local
+  Number of Contours = 11
 END
 
 !}
