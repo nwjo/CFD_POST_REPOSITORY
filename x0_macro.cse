@@ -13,8 +13,8 @@ END
 !for($i=0; $i < $numsteps;$i++){
 !$trans = $i;
 !$distance = $trans * 0.02;
-PLANE x0 $trans
-x= $trans [m]
+PLANE: x0 $trans
+X= $trans [m]
 
 END
 
