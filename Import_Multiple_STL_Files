@@ -1,0 +1,33 @@
+!$numFiles = 168;
+!for($i=1; $i <= $numFiles; $i++){
+  !$B_number = int(($i - 1) / 24) + 1;
+  !if($i == 1){
+    USER SURFACE: B $B_number F $i
+      Associated Boundary = baffle
+      Associated Boundary Specified = On
+      Blend Texture = On
+      Domain List = /DOMAIN GROUP:All Domains
+      Draw Contours = Off
+      Draw Faces = On
+      File Units = m
+      Input File = Y:/Ecoset/2022_Ecoset_AIoT/13_2024_LampOff_Scenario/sampled_stl/Fin_Clew_Model_CM02_AllOpti_Full_sampling.stl
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Visibility = On
+      Option = From STL File 
+    END
+  !} else {
+    USER SURFACE: B $B_number F $i
+      Associated Boundary = baffle
+      Associated Boundary Specified = On
+      Blend Texture = On
+      Domain List = /DOMAIN GROUP:All Domains
+      Draw Contours = Off
+      Draw Faces = On
+      File Units = m
+      Input File = Y:/Ecoset/2022_Ecoset_AIoT/13_2024_LampOff_Scenario/sampled_stl/Fin_Clew_Model_CM02_AllOpti_Full_sampling($i).stl
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Visibility = On
+      Option = From STL File 
+    END
+  !}
+!}
