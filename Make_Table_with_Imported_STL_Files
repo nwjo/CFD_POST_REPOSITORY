@@ -1,0 +1,21 @@
+TABLE: Table 1
+  Table Exists = True
+  TABLE CELLS:
+    A1 = "Mass Flow Rate", False, False, False, Left, True, 0, Font Name, 1|1, %10.3e, True, ffffff, 000000, True
+    A2 = "Position", False, False, False, Left, True, 0, Font Name, 1|1, %10.3e, True, ffffff, 000000, True
+
+!$numFiles = 168;    # 총 파일 수
+!$groupSize = 24;    # 그룹 크기
+!$currentGroup = 1;  # 초기 그룹 번호
+
+!for($i=1; $i <= $numFiles; $i++){
+  !$row = $i + 2;  # A열 시작 행 (A1, A2는 고정이므로 +2)
+  !if($i % $groupSize == 1 && $i > 1){
+    !$currentGroup = $currentGroup + 1;  # 그룹 번호 업데이트
+  !}
+
+  A{$row} = "B $currentGroup F $i", False, False, False, Left, True, 0, Font Name, 1|1, %10.3e, True, ffffff, 000000, True
+  B{$row} = "=massFlow()@B $currentGroup F $i", False, False, False, Left, True, 0, Font Name, 1|1, %10.3e, False, ffffff, 000000, True
+!}
+  END
+END
