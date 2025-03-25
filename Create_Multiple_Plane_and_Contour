@@ -9,7 +9,9 @@ PLANE: z0 10LPM $trans
   Colour Scale = Linear
   Colour Mode = Variable
   Colour Variable = Velocity
-  Range =Specified
+  Range = User Specified
+  Max = 1
+  Min = 0.0
   Number of Contours = 11
 END
 
