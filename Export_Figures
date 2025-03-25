@@ -17,7 +17,7 @@ END
 
 HARDCOPY:
   Antialiasing = On
-  Hardcopy Filename = Y:/Ecoset/2025_Ecoset_Joongbu_LPM_Test/2_Flow_Results/3_calculation_results/$name_sectional_view_velocity_pos0$i.png
+  Hardcopy Filename = Y:/Ecoset/2025_Ecoset_Joongbu_LPM_Test/2_Flow_Results/3_calculation_results/${name}_sectional_view_velocity_pos0$i.png
   Hardcopy Format = png
   Hardcopy Tolerance = 0.0001
   Image Height = 400
