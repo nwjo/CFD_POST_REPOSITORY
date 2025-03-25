@@ -1,14 +1,14 @@
-!$numsteps = 30;
+!$numsteps = 14;
 !for($i=0; $i < $numsteps;$i++){
 !$initialPo=0.65;
 !$trans = $i;
 !$distance = $initialPo- $trans * 0.1;
-PLANE: z0 10LPM $trans
+PLANE: z0 10LPM V $trans
   Option = XY Plane
   Z= $distance [m]
   Colour Scale = Linear
   Colour Mode = Variable
-  Colour Variable = Velocity
+  Colour Variable = nonDimen Velocity for 10LPM
   Range = User Specified
   Max = 1
   Min = 0.0
