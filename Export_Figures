@@ -9,7 +9,7 @@ COMMAND FILE:
   CFX Post Version = 24.1
 END
 
-!$name=460LPM;
+!$name="460LPM";
 !$numFiles = 14;
 !for($i=0; $i <= $numFiles; $i++){
 
